@@ -1,0 +1,15 @@
+# LaTeX junk
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.pdf
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Node/IDE (if applicable)
+.vscode/
+.idea/
