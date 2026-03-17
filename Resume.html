@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Robert Koch | Systems Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --secondary: #10b981;
+            --dark: #0f172a;
+            --accent: #8b5cf6;
+        }
+        body {
+            background-color: var(--dark);
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .skill-tag {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            background: rgba(59, 130, 246, 0.2);
+            transform: translateY(-2px);
+        }
+        .nav-link.active {
+            color: var(--primary);
+            border-left: 2px solid var(--primary);
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        <!-- Sidebar Navigation -->
+        <nav class="lg:w-64 lg:fixed lg:h-screen glass z-50 p-6 flex flex-col justify-between">
+            <div>
+                <div class="mb-8">
+                    <h1 class="text-2xl font-bold gradient-text">D. R. Koch</h1>
+                    <p class="text-xs text-slate-400 uppercase tracking-widest mt-1">Systems Architect</p>
+                </div>
+                <ul class="space-y-4">
+                    <li><a href="#summary" class="nav-link block text-sm hover:text-white transition">Summary</a></li>
+                    <li><a href="#profile" class="nav-link block text-sm hover:text-white transition">Analytical Profile</a></li>
+                    <li><a href="#projects" class="nav-link block text-sm hover:text-white transition">Technical Projects</a></li>
+                    <li><a href="#experience" class="nav-link block text-sm hover:text-white transition">Experience</a></li>
+                    <li><a href="#skills" class="nav-link block text-sm hover:text-white transition">Skills Matrix</a></li>
+                </ul>
+            </div>
+            <div class="pt-6 border-t border-slate-700">
+                <div class="flex space-x-4 text-slate-400">
+                    <a href="mailto:davidrobertkochelsdorf@gmail.com" class="hover:text-primary"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="lg:ml-64 flex-1 p-6 lg:p-12 space-y-24 max-w-5xl">
+
+            <!-- Summary Header -->
+            <section id="summary" class="pt-12">
+                <div class="max-w-3xl">
+                    <h2 class="text-5xl font-extrabold mb-6">Systems <span class="text-primary italic">Synthesis</span></h2>
+                    <p class="text-xl text-slate-300 leading-relaxed">
+                        Orchestrating the intersection of bare-metal infrastructure and Agentic AI.
+                        Expert in securing and optimizing high-performance systems—from mission-critical Linux environments
+                        to local LLM orchestration.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <span class="glass px-4 py-2 rounded-full text-sm"><i class="fas fa-microchip mr-2 text-primary"></i>DevOps & Cloud</span>
+                        <span class="glass px-4 py-2 rounded-full text-sm"><i class="fas fa-robot mr-2 text-secondary"></i>Agentic AI</span>
+                        <span class="glass px-4 py-2 rounded-full text-sm"><i class="fas fa-shield-halved mr-2 text-accent"></i>Security Auditing</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analytical Profile -->
+            <section id="profile">
+                <h3 class="text-2xl font-bold mb-8 flex items-center">
+                    <span class="w-8 h-px bg-primary mr-4"></span> Cognitive Framework
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="glass p-6 rounded-xl">
+                        <i class="fas fa-brain text-2xl text-primary mb-4"></i>
+                        <h4 class="font-bold mb-2 text-lg">Systems Thinking</h4>
+                        <p class="text-sm text-slate-400">Identifying core nodes and protocols in multi-node architectures, stripping away noise to address underlying architectural vulnerabilities.</p>
+                    </div>
+                    <div class="glass p-6 rounded-xl">
+                        <i class="fas fa-terminal text-2xl text-secondary mb-4"></i>
+                        <h4 class="font-bold mb-2 text-lg">AI Logic (RLHF)</h4>
+                        <p class="text-sm text-slate-400">Professional "context-switcher" experienced in stress-testing models, evaluating logical fallacies, and structuring high-density information.</p>
+                    </div>
+                    <div class="glass p-6 rounded-xl">
+                        <i class="fas fa-language text-2xl text-accent mb-4"></i>
+                        <h4 class="font-bold mb-2 text-lg">Linguistic Precision</h4>
+                        <p class="text-sm text-slate-400">Native-level German/English fluency with a translator's focus on semantic nuance—essential for technical and diplomatic clarity.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Projects -->
+            <section id="projects">
+                <h3 class="text-2xl font-bold mb-8 flex items-center">
+                    <span class="w-8 h-px bg-primary mr-4"></span> Specialized Workflows
+                </h3>
+                <div class="space-y-6">
+                    <div class="glass p-8 rounded-2xl border-l-4 border-primary">
+                        <div class="flex flex-col md:flex-row justify-between mb-4">
+                            <h4 class="text-xl font-bold">AI Infrastructure Architecture (CHIM)</h4>
+                            <span class="text-slate-500 font-mono text-sm">Ollama | RAG | API Optimization</span>
+                        </div>
+                        <p class="text-slate-300 mb-4">Architected local AI backend solutions for agentic game NPC integration. Managed complex hardware constraints (Shared Memory for APUs, VRAM optimization) to maintain sub-second latency.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag px-3 py-1 rounded text-xs">Mistral</span>
+                            <span class="skill-tag px-3 py-1 rounded text-xs">GLM-4</span>
+                            <span class="skill-tag px-3 py-1 rounded text-xs">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="glass p-8 rounded-2xl border-l-4 border-secondary">
+                        <div class="flex flex-col md:flex-row justify-between mb-4">
+                            <h4 class="text-xl font-bold">10-Phase Security Audit</h4>
+                            <span class="text-slate-500 font-mono text-sm">Linux | Kernel Hardening</span>
+                        </div>
+                        <p class="text-slate-300 mb-4">Authored and executed a comprehensive security audit for MS-A1 systems. Implemented systematic checks for user access, network perimeter security, and kernel-level features (AppArmor).</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-tag px-3 py-1 rounded text-xs">CachyOS</span>
+                            <span class="skill-tag px-3 py-1 rounded text-xs">Netstat</span>
+                            <span class="skill-tag px-3 py-1 rounded text-xs">Auditctl</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience">
+                <h3 class="text-2xl font-bold mb-8 flex items-center">
+                    <span class="w-8 h-px bg-primary mr-4"></span> Career Trajectory
+                </h3>
+                <div class="relative pl-8 border-l border-slate-700 space-y-12">
+                    <!-- Dalmer Co -->
+                    <div class="relative">
+                        <div class="absolute -left-[37px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-dark"></div>
+                        <h4 class="text-lg font-bold">Co-Founder & Manager</h4>
+                        <p class="text-primary text-sm mb-2">Dalmer Co., "Butter" Project | 2024 - Present</p>
+                        <ul class="text-sm text-slate-400 space-y-1 list-disc ml-4">
+                            <li>Managing cross-border coordination between international dev teams.</li>
+                            <li>Lead for English-German localization and technical translation.</li>
+                        </ul>
+                    </div>
+                    <!-- Imos -->
+                    <div class="relative">
+                        <div class="absolute -left-[37px] top-0 w-4 h-4 rounded-full bg-slate-600 border-4 border-dark"></div>
+                        <h4 class="text-lg font-bold">Junior Cloud Engineer</h4>
+                        <p class="text-slate-400 text-sm mb-2">Imos GmbH | 2024</p>
+                        <p class="text-sm text-slate-500 italic">Specialized VM environments and macOS on Proxmox deployments.</p>
+                    </div>
+                    <!-- Telekom -->
+                    <div class="relative">
+                        <div class="absolute -left-[37px] top-0 w-4 h-4 rounded-full bg-slate-600 border-4 border-dark"></div>
+                        <h4 class="text-lg font-bold">Junior DevOps Programmer</h4>
+                        <p class="text-slate-400 text-sm mb-2">Deutsche Telekom | 2023 - 2024</p>
+                        <p class="text-sm text-slate-500 italic">Managed security updates and Linux environments for telecom infrastructure.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Matrix -->
+            <section id="skills" class="pb-24">
+                <h3 class="text-2xl font-bold mb-8 flex items-center">
+                    <span class="w-8 h-px bg-primary mr-4"></span> Skill Matrix
+                </h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="uppercase text-xs tracking-widest text-slate-500">Core Engineering</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm"><span>C++ / Rust / C#</span><span class="text-primary">Advanced</span></div>
+                            <div class="w-full bg-slate-800 h-1 rounded-full"><div class="bg-primary h-1 rounded-full w-[85%]"></div></div>
+
+                            <div class="flex justify-between text-sm"><span>Linux / Bash / Python</span><span class="text-primary">Expert</span></div>
+                            <div class="w-full bg-slate-800 h-1 rounded-full"><div class="bg-primary h-1 rounded-full w-[95%]"></div></div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="uppercase text-xs tracking-widest text-slate-500">Modern Stack</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="glass px-3 py-1 rounded text-xs">Ollama</span>
+                            <span class="glass px-3 py-1 rounded text-xs">ComfyUI</span>
+                            <span class="glass px-3 py-1 rounded text-xs">Proxmox</span>
+                            <span class="glass px-3 py-1 rounded text-xs">Blender CAD</span>
+                            <span class="glass px-3 py-1 rounded text-xs">Unity/UE</span>
+                            <span class="glass px-3 py-1 rounded text-xs">RLHF</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        // Simple Navigation Highlighting
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.onscroll = () => {
+            let current = "";
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        };
+    </script>
+</body>
+</html>
