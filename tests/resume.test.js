@@ -16,7 +16,7 @@ test('verify resume content updates', async ({ page }) => {
 
   // Verify Technical Projects
   await expect(page.locator('section#projects')).toContainText('ELENA Sovereign Agent Framework');
-  await expect(page.locator('section#projects')).toContainText('Qwen 3.5 & GDN Optimization');
+  await expect(page.locator('section#projects')).toContainText('The Infinity Fallacy: Analytical Research');
   await expect(page.locator('section#projects')).toContainText('AMD ROCm Hardened Node');
 
   // Verify Skills
